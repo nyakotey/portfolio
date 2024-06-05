@@ -717,44 +717,6 @@ main {
 }
 
 
-/**
- * #clients
- */
-
-.clients { margin-bottom: 15px; }
-
-.clients-list {
-  display: flex;
-  justify-content: flex-start;
-  align-items: flex-start;
-  gap: 15px;
-  margin: 0 -15px;
-  padding: 25px;
-  padding-bottom: 25px;
-  overflow-x: auto;
-  scroll-behavior: smooth;
-  overscroll-behavior-inline: contain;
-  scroll-snap-type: inline mandatory;
-  scroll-padding-inline: 25px;
-}
-
-.clients-item {
-  min-width: 50%;
-  scroll-snap-align: start;
-}
-
-.clients-item img {
-  width: 100%;
-  filter: grayscale(1);
-  transition: var(--transition-1);
-}
-
-.clients-item img:hover { filter: grayscale(0); }
-
-
-
-
-
 /*-----------------------------------*\
   #RESUME
 \*-----------------------------------*/
@@ -1230,13 +1192,6 @@ textarea.form-input::-webkit-resizer { display: none; }
 
 @media (min-width: 450px) {
 
-  /**
-   * client
-   */
-
-  .clients-item { min-width: calc(33.33% - 10px); }
-
-
 
   /**
    * #PORTFOLIO, BLOG
@@ -1465,19 +1420,6 @@ textarea.form-input::-webkit-resizer { display: none; }
     flex-grow: 1;
     width: 35px;
   }
-
-  /* clients */
-
-  .clients-list {
-    gap: 50px;
-    margin: 0 -30px;
-    padding: 45px;
-    scroll-padding-inline: 45px;
-  }
-
-  .clients-item { min-width: calc(33.33% - 35px); }
-
-
 
   /**
    * #RESUME
@@ -1728,11 +1670,6 @@ textarea.form-input::-webkit-resizer { display: none; }
   /* testimonials */
 
   .testimonials-item { min-width: calc(50% - 15px); }
-
-  /* clients */
-
-  .clients-item { min-width: calc(25% - 38px); }
-
 
 
   /**

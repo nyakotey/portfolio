@@ -24,28 +24,16 @@ export class AboutComponent {
 testimonies = [
   {
     "avatar": "../assets/images/avatar-1.png",
-    "title": "Daniel Lewis",
-    "text": "Daniel Lewis was hired to create a corporate identity. We were very pleased with the work done. She has a lot of experience and is very concerned about the needs of client. Lorem ipsum dolor sit amet, ullamcous cididt consectetur adipiscing elit, seds do et eiusmod tempor incididunt ut laborels dolore magnarels alia.",
-    "alt_text": "Daniel Lewis"
-  },
-  {
-    "avatar": "../assets/images/avatar-2.png",
-    "title": "Jessica Miller",
-    "text": "Jessica was hired to create a corporate identity. We were very pleased with the work done. She has a lot of experience and is very concerned about the needs of client. Lorem ipsum dolor sit amet, ullamcous cididt consectetur adipiscing elit, seds do et eiusmod tempor incididunt ut laborels dolore magnarels alia.",
-    "alt_text": "Jessica Miller"
-  },
-  {
-    "avatar": "../assets/images/avatar-3.png",
-    "title": "Emily Evans",
-    "text": "Emily was hired to create a corporate identity. We were very pleased with the work done. She has a lot of experience and is very concerned about the needs of client. Lorem ipsum dolor sit amet, ullamcous cididt consectetur adipiscing elit, seds do et eiusmod tempor incididunt ut laborels dolore magnarels alia.",
-    "alt_text": "Emily Evans"
+    "title": "Mr. Samuel Adabor ",
+    "text": "Nathaniel is an incredible person to work with. He really pays attention to the little details that we often miss in our design iterations. In short, he has good problem-solving skills, adapts quickly, and is self-motivated",
+    "alt_text": "Mr. Samuel Adabor "
   },
   {
     "avatar": "../assets/images/avatar-4.png",
-    "title": "Henry William",
-    "text": "Henry was hired to create a corporate identity. We were very pleased with the work done. She has a lot of experience and is very concerned about the needs of client. Lorem ipsum dolor sit amet, ullamcous cididt consectetur adipiscing elit, seds do eiusmod tempor incididunt ut laborels dolore magnarels alia.",
-    "alt_text": "Henry William"
-  }
+    "title": "Dr. Kwasi Opare",
+    "text": "I had the privilege of teaching Mr. Nyakotey during his time as a student in the Faculty of Electrical and Computer Engineering at Kwame Nkrumah University of Science and Technology (KNUST), Kumasi, Ghana. , Mr. Nyakotey exhibits a great deal of discipline and responsibility in his work. I found him to be a highly intelligent, hardworking, and dedicated student. ",
+    "alt_text": "Dr. Kwasi Opare"
+  },
 ]
 
 }

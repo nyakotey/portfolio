@@ -11,7 +11,7 @@ export class PortfolioComponent {
   filter = 'all';
   isFilterActive = false;
   selectedCategory = 'Select category';
-  categories = ['All', 'Web design', 'Applications', 'Web development'];
+  categories = ['All', 'ECE', 'CSS Art', 'Web Development'];
 
   filterFunc(event: any) {
     this.filter = event.target.innerHTML.toLowerCase();
@@ -34,59 +34,76 @@ export class PortfolioComponent {
 
   projects = [
     {
-      title: 'Finance',
-      category: 'Web development',
+      title: 'CallCodes',
+      category: 'Web Development',
       image: '../assets/images/project-1.jpg',
-      alt: 'finance',
+      alt: 'callcodes',
+      link: "https://call-codes.vercel.app/",
     },
     {
-      title: 'Orizon',
-      category: 'Web development',
+      title: 'Rcountdown',
+      category: 'Web Development',
       image: '../assets/images/project-2.png',
-      alt: 'orizon',
+      alt: 'rcountdown',
+      link: "https://rcountdown.netlify.app/",
     },
     {
-      title: 'Fundo',
-      category: 'Web design',
+      title: 'Todo App with Firebase',
+      category: 'Web Development',
       image: '../assets/images/project-3.jpg',
-      alt: 'fundo',
+      alt: 'Todo App with Firebase',
+      link: "https://todosky6.netlify.app",
     },
     {
-      title: 'Brawlhalla',
-      category: 'Applications',
+      title: 'Coffin Dancers',
+      category: 'CSS Art',
       image: '../assets/images/project-4.png',
-      alt: 'brawlhalla',
+      alt: 'Coffin Dancers',
+      link: "/css-art",
     },
     {
-      title: 'DSM.',
-      category: 'Web design',
+      title: 'Loaders',
+      category: 'CSS Art',
       image: '../assets/images/project-5.png',
-      alt: 'dsm.',
+      alt: 'loaders',
+      link: "/css-art",
     },
     {
-      title: 'MetaSpark',
-      category: 'Web design',
+      title: 'Piano Man',
+      category: 'CSS Art',
       image: '../assets/images/project-6.png',
-      alt: 'metaspark',
+      alt: 'Piano Man',
+      link: "/css-art",
     },
     {
-      title: 'Summary',
-      category: 'Web development',
+      title: 'Electronics',
+      category: 'ECE',
       image: '../assets/images/project-7.png',
-      alt: 'summary',
+      alt: 'Electronics',
+      link: "/ece",
     },
     {
-      title: 'Task Manager',
-      category: 'Applications',
+      title: 'Powerbanks',
+      category: 'ECE',
       image: '../assets/images/project-8.jpg',
-      alt: 'task manager',
+      alt: 'Powerbanks',
+      link: "/ece",
     },
     {
-      title: 'Arrival',
-      category: 'Web development',
+      title: 'DIY Fan - 100% Recycled',
+      category: 'ECE',
       image: '../assets/images/project-9.png',
       alt: 'arrival',
+      link: "/ece",
     },
   ];
-  filteredProjects = this.projects;
+  filteredProjects = this.projects.sort((a, b) => {
+    if (a.category < b.category) {
+        return -1;
+    }
+    if (a.category > b.category) {
+        return 1;
+    }
+    return 0;
+});
 }
