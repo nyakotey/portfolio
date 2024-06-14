@@ -16,12 +16,12 @@
 
     <h3 class="h3 form-title">Contact Form</h3>
 
-    <form action="#" class="form" #form="ngForm"  >
+    <form action="#" class="form" #form="ngForm" (ngSubmit)="sendEmail($event)" >
 
       <div class="input-wrapper">
-        <input type="text" name="fullname" [(ngModel)]="fullname" class="form-input" placeholder="Full name" required>
+        <input type="text" name="user_name" [(ngModel)]="fullname" class="form-input" placeholder="Full name" required>
 
-        <input type="email" name="email" [(ngModel)]="email"  email="true" class="form-input" placeholder="Email address" required>
+        <input type="email" name="user_email" [(ngModel)]="email"  email="true" class="form-input" placeholder="Email address" required>
       </div>
 
       <textarea name="message" [(ngModel)]="message" class="form-input" placeholder="Your Message" required></textarea>
