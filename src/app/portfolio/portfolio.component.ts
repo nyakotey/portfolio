@@ -11,7 +11,7 @@ export class PortfolioComponent {
   filter = 'all';
   isFilterActive = false;
   selectedCategory = 'Select category';
-  categories = ['All', 'ECE', 'CSS Art', 'Web Development'];
+  categories = ['All', 'ECE', 'AI', 'Web Development', 'CSS Art'];
 
   filterFunc(event: any) {
     this.filter = event.target.innerHTML.toLowerCase();
@@ -34,9 +34,51 @@ export class PortfolioComponent {
 
   projects = [
     {
+      title: 'CAD Designs with Fusion360',
+      category: 'ECE',
+      image: '../assets/images/project-9.png',
+      alt: 'Robot Gripper design in Fusion360',
+      link: "/ece",
+    },
+    {
+      title: 'Fuel to Electric Bike Conversion',
+      category: 'ECE',
+      image: '../assets/images/project-9.png',
+      alt: 'Fuel to Electric Bike Conversion',
+      link: "/ece",
+    },
+    {
+      title: 'EV Battery Build and Assembly',
+      category: 'ECE',
+      image: '../assets/images/project-9.png',
+      alt: 'EV Battery Build and Assembly',
+      link: "/ece",
+    },
+    {
+      title: 'GPS Tracker - Design to PCB',
+      category: 'ECE',
+      image: '../assets/images/project-9.png',
+      alt: 'GPS Tracker - Design to PCB',
+      link: "/ece",
+    },
+    {
+      title: 'MATLAB Simulations',
+      category: 'ECE',
+      image: '../assets/images/project-9.png',
+      alt: 'MATLAB Simulations',
+      link: "/ece",
+    },
+    {
+      title: 'Musical Instrument Classification Transformer Model',
+      category: 'AI',
+      image: '../assets/images/project-7.png',
+      alt: 'AI',
+      link: "https://huggingface.co/spaces/Nyakotey/Musical-Instrument-Classifier",
+    },
+    {
       title: 'CallCodes',
       category: 'Web Development',
-      image: '../assets/images/project-1.jpg',
+      image: '../assets/images/project-2.png',
       alt: 'callcodes',
       link: "https://call-codes.vercel.app/",
     },
@@ -50,60 +92,31 @@ export class PortfolioComponent {
     {
       title: 'Todo App with Firebase',
       category: 'Web Development',
-      image: '../assets/images/project-3.jpg',
+      image: '../assets/images/project-2.png',
       alt: 'Todo App with Firebase',
       link: "https://todosky6.netlify.app",
     },
     {
-      title: 'Coffin Dancers',
+      title: 'Coffin Dancers 👯‍♂️',
       category: 'CSS Art',
       image: '../assets/images/project-4.png',
       alt: 'Coffin Dancers',
-      link: "/css-art",
+      link: "https://coffin-dance-meme.netlify.app",
     },
     {
-      title: 'Loaders',
+      title: 'Piano Man 🎹',
       category: 'CSS Art',
-      image: '../assets/images/project-5.png',
-      alt: 'loaders',
-      link: "/css-art",
+      image: '../assets/images/project-4.png',
+      alt: 'piano man',
+      link: "https://www.sololearn.com/en/compiler-playground/Wa2geW5KnOIt",
     },
     {
-      title: 'Piano Man',
+      title: 'Epic Christmas Show🎅🎄🎬',
       category: 'CSS Art',
-      image: '../assets/images/project-6.png',
-      alt: 'Piano Man',
-      link: "/css-art",
-    },
-    {
-      title: 'Electronics',
-      category: 'ECE',
-      image: '../assets/images/project-7.png',
-      alt: 'Electronics',
-      link: "/ece",
-    },
-    {
-      title: 'Powerbanks',
-      category: 'ECE',
-      image: '../assets/images/project-8.jpg',
-      alt: 'Powerbanks',
-      link: "/ece",
-    },
-    {
-      title: 'DIY Fan - 100% Recycled',
-      category: 'ECE',
-      image: '../assets/images/project-9.png',
-      alt: 'arrival',
-      link: "/ece",
+      image: '../assets/images/project-4.png',
+      alt: 'Epic Christmas Show',
+      link: "https://www.sololearn.com/en/compiler-playground/WgboaWLHXidi",
     },
   ];
-  filteredProjects = this.projects.sort((a, b) => {
-    if (a.category < b.category) {
-        return -1;
-    }
-    if (a.category > b.category) {
-        return 1;
-    }
-    return 0;
-});
+  filteredProjects = this.projects
 }
