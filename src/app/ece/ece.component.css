@@ -1,0 +1,9 @@
+@media (min-width: 580px) {
+  .testimonials-modal {
+    flex-direction: column;
+  }
+  .modal-avatar-box img {
+    width: 50vmin;
+  }
+}
+

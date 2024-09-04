@@ -39,23 +39,39 @@
 
     <ul class="project-list">
       @for(project of filteredProjects; track $index){
-      <li class="project-item active">
-        <a href="{{project.link}}">
+        @if(project.isExternal){
+          <li class="project-item active">
+            <a href="{{project.link}}">
+              <figure class="project-img">
+                <div class="project-item-icon-box">
+                  <ion-icon name="eye-outline"></ion-icon>
+                </div>
 
-          <figure class="project-img">
-            <div class="project-item-icon-box">
-              <ion-icon name="eye-outline"></ion-icon>
-            </div>
+                <img [src]="project.image" [alt]="project.alt" loading="lazy">
+              </figure>
 
-            <img [src]="project.image" [alt]="project.alt" loading="lazy">
-          </figure>
+              <h3 class="project-title">{{project.title}}</h3>
 
-          <h3 class="project-title">{{project.title}}</h3>
+              <p class="project-category">{{project.category}}</p>
 
-          <p class="project-category">{{project.category}}</p>
+            </a>
+          </li>
+        }
+        @else {
+          <li class="project-item active" (click)="popUpProject(project)">
+              <figure class="project-img">
+                <div class="project-item-icon-box">
+                  <ion-icon name="eye-outline"></ion-icon>
+                </div>
 
-        </a>
-      </li>
+                <img [src]="project.image" [alt]="project.alt" loading="lazy">
+              </figure>
+
+              <h3 class="project-title">{{project.title}}</h3>
+
+              <p class="project-category">{{project.category}}</p>
+          </li>
+        }
       }
 
     </ul>
@@ -63,3 +79,5 @@
   </section>
 
 </article>
+
+ <app-ece [project]=project></app-ece>

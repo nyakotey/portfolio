@@ -1,0 +1,32 @@
+<div class="modal-container" [class.active]="modalActive">
+
+  <div class="overlay" [class.active]="modalActive"></div>
+
+  <section class="testimonials-modal">
+
+    <button class="modal-close-btn" (click)="toggleModal()">
+      <ion-icon name="close-outline"></ion-icon>
+    </button>
+
+    <div class="modal-img-wrapper">
+      <figure class="modal-avatar-box">
+        <img [src]="project.image" [alt]="project.alt" width="200" data-modal-img>
+      </figure>
+    </div>
+
+    <div class="modal-content">
+
+      <h4 class="h3 modal-title" data-modal-title>{{project.title}}</h4>
+
+      <div data-modal-text>
+        <p>
+          {{ project.text}}
+        </p>
+      </div>
+
+    </div>
+
+  </section>
+
+</div>
+
