@@ -35,4 +35,12 @@
 
   </section>
 
+  @if(showNotification){
+    <section class="modal-container active">
+      <div class="notification" style="animation-play-state: running" (click)="closeNotification()">
+        {{notificationMsg}}
+        <span class="close"><ion-icon name="close"></ion-icon></span>
+      </div>
+    </section>
+  }
 </article>
