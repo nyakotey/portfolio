@@ -117,6 +117,15 @@ export class PortfolioComponent {
       text: '',
     },
     {
+        title: 'E-commerce Website',
+        category: 'Web Dev',
+        image: '../assets/images/audiommerce.png',
+        alt: 'E-commerce Website',
+        link: "https://audiommerce.netlify.app/",
+        isExternal: true,
+        text: '',
+    },
+    {
       title: 'Coffin Dancers 👯‍♂️',
       category: 'CSS Art',
       image: '../assets/images/coffin.png',
@@ -143,6 +152,7 @@ export class PortfolioComponent {
       isExternal: true,
       text: '',
     },
+    
   ];
   filteredProjects = this.projects
 }
