@@ -126,6 +126,15 @@ export class PortfolioComponent {
         text: '',
     },
     {
+        title: 'Ghana Stock Exchange Portfolio Dashboard',
+        category: 'Web Dev',
+        image: '../assets/images/isedan.png',
+        alt: 'GSE Portfolio Dashboard',
+        link: "https://isedan.netlify.app/",
+        isExternal: true,
+        text: '',
+    },
+    {
       title: 'Coffin Dancers 👯‍♂️',
       category: 'CSS Art',
       image: '../assets/images/coffin.png',
