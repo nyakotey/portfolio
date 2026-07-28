@@ -42,23 +42,32 @@ export class PortfolioComponent {
   toggleClass() {
     this.isFilterActive = !this.isFilterActive;
   }
-
+  
   projects = [
-    {
-      title: 'Musical Instrument Classification Transformer Model',
-      category: 'AI/ML',
-      image: '../assets/images/minst-classifier.png',
-      alt: 'AI/ML',
-      link: "https://huggingface.co/spaces/Nyakotey/Musical-Instrument-Classifier",
-      isExternal: true,
-      text: '',
-    },
     {
       title: 'Deep Reinforcement Learning For UAV Landing Control',
       category: 'AI/ML',
       image: '../assets/images/drl-uav.png',
       alt: 'simulation env for DRL control of uav',
       link: "https://github.com/nyakotey/recline",
+      isExternal: true,
+      text: '',
+    },
+    {
+        title: 'ISEDAN - Ghana Stock Tracker App',
+        category: 'Web Dev',
+        image: '../assets/images/isedan.png',
+        alt: 'GSE Portfolio Dashboard',
+        link: "https://isedan.app/",
+        isExternal: true,
+        text: '',
+    },
+    {
+      title: 'Musical Instrument Classification Transformer Model',
+      category: 'AI/ML',
+      image: '../assets/images/minst-classifier.png',
+      alt: 'AI/ML',
+      link: "https://huggingface.co/spaces/Nyakotey/Musical-Instrument-Classifier",
       isExternal: true,
       text: '',
     },
@@ -70,15 +79,6 @@ export class PortfolioComponent {
       link: "ece",
       isExternal: false,
       text: 'The research team embarked on a project to locally develop GPS trackers for the fleet of EVs. The Circuit Design works were done with EASYEDA software, PCB printing was outsourced but soldering and assembly was done in-house',
-    },
-    {
-      title: 'Todo App with Firebase',
-      category: 'Web Dev',
-      image: '../assets/images/todoapp.png',
-      alt: 'Todo App with Firebase',
-      link: "https://todosky6.netlify.app",
-      isExternal: true,
-      text: '',
     },
     {
       title: 'CAD Designs and modelling',
@@ -124,24 +124,6 @@ export class PortfolioComponent {
       link: "https://rcountdown.netlify.app/",
       isExternal: true,
       text: '',
-    },
-    {
-        title: 'E-commerce Website',
-        category: 'Web Dev',
-        image: '../assets/images/audiommerce.png',
-        alt: 'E-commerce Website',
-        link: "https://audiommerce.netlify.app/",
-        isExternal: true,
-        text: '',
-    },
-    {
-        title: 'Ghana Stock Exchange Portfolio Dashboard',
-        category: 'Web Dev',
-        image: '../assets/images/isedan.png',
-        alt: 'GSE Portfolio Dashboard',
-        link: "https://isedan.app/",
-        isExternal: true,
-        text: '',
     },
     {
       title: 'Coffin Dancers 👯‍♂️',

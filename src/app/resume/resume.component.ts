@@ -12,7 +12,7 @@ export class ResumeComponent {
 downloadCV() {
   const link = document.createElement('a');
   link.setAttribute('target', '_blank');
-  link.setAttribute('href', 'https://drive.google.com/uc?export=download&id=1v7foWRMMtQ0oz9QV2UtvhtMi1f3l0GfZ');
+  link.setAttribute('href', 'https://drive.google.com/uc?export=download&id=1z5Zw0r0COFDyukzEgrQglBJhnKN2ljog');
   link.setAttribute('download', 'Nathaniel_Nyakotey_CV.pdf');
   document.body.appendChild(link);
   link.click();
